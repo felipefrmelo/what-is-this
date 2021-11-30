@@ -6,7 +6,7 @@
 
 You can see the demo at [here](https://aqueous-island-14478.herokuapp.com/).
 
-<img src="image.png" alt="exemplo imagem">
+<img src="demo.png" target="_blank" alt="demo imagem">
 
 ## Installation
 
