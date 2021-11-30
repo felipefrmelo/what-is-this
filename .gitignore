@@ -183,3 +183,4 @@ cython_debug/
 
 static/img/*
 !static/img/default.jpg
+!static/img/demo*
