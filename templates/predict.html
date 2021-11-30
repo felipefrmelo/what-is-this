@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<h1 class="display-5 fw-bold lh-1 mb-3">{{ result.title }}</h1>
+
+<p class="lead">{{ result.summary}}</p>
+
+<p class="lead d-fl d-flex justify-content-end">
+  <a href="{{ result.url }}" class="btn btn-link btn-sm" target="_blank">
+    {{ i18.read_more }}
+  </a>
+</p>
+<p class="lead">
+  <a
+    href="{{ url_for('index') }}"
+    class="btn btn-outline-primary px-4 me-md-2 mt-4"
+  >
+    {{ i18.try_again }}
+  </a>
+</p>
+{% endblock %}

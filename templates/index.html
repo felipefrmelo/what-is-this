@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="display-5 fw-bold lh-1 mb-3">{{i18.title}}</h1>
+<form
+  action="/predict/"
+  enctype="multipart/form-data"
+  method="post"
+  class="d-grid gap-2 d-md-flex justify-content-md-start"
+>
+  <div class="mb-3">
+    <label for="file" class="form-label">{{i18.upload_image}}</label>
+
+    <input
+      required
+      name="file"
+      accept="image/*"
+      class="form-control"
+      type="file"
+      id="file"
+    />
+    <input type="submit" class="btn btn-outline-primary px-4 me-md-2 mt-4" />
+  </div>
+</form>
+{% endblock %}
