@@ -1,3 +1,5 @@
+import uvicorn
+import os
 from fastapi.param_functions import Depends
 from inference import predict
 from fastapi import FastAPI, File, UploadFile
@@ -71,3 +73,8 @@ async def create_upload_file(render=Depends(renderTemplate),
 async def index(render=Depends(renderTemplate)):
 
     return render(filename="default.jpg")
+
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0",
+                port=os.environ.get('PORT', 8000), log_level="info")
