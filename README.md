@@ -4,7 +4,7 @@
 
 ## Demo
 
-You can see the demo at [https://aqueous-island-14478.herokuapp.com/](here).
+You can see the demo at [here](https://aqueous-island-14478.herokuapp.com/).
 
 <img src="image.png" alt="exemplo imagem">
 
